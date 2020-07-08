@@ -1,0 +1,18 @@
+#include<stdio.h>
+int fact(int n);
+int main()
+{
+    int i,n;
+    printf("Enter the Number:");
+    scanf("%d",&n);
+    i=fact(n);
+    printf("Factorial of %d is %d",n,fact(n));
+}
+int fact(int n)
+{
+    if(n==0)
+        return 1;
+    else
+        return (n*fact(n-1));
+}
+
